@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tài nguyên — Thư viện tri thức | AI & Digital Publishing</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="section-sm" id="resourceRoot"><div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><a href="knowledge-hub.html">Thư viện tri thức</a><i data-lucide="chevron-right"></i><span aria-current="page" id="rBcTitle"></span></nav>
+  <a class="btn btn-ghost" href="knowledge-hub.html#resources"><i data-lucide="arrow-left"></i>Quay lại thư viện</a>
+  <div class="res-hero" style="margin-top:1.2rem">
+    <div class="res-big-cover" id="rCover"></div>
+    <div class="reveal">
+      <span class="badge badge-outline" id="rBadge"></span>
+      <h1 id="rTitle" style="font-size:clamp(1.8rem,1.2rem + 2.2vw,2.8rem);margin-block:.8rem"></h1>
+      <p class="subtitle" id="rDesc"></p>
+      <div class="spec-grid" id="rSpecs"></div>
+      <div class="row" style="--gap:.8rem"><button class="btn btn-primary btn-lg" id="rDl"><i data-lucide="download"></i>Tải tài liệu</button><button class="btn btn-secondary btn-lg" id="rPv"><i data-lucide="eye"></i>Xem trước</button></div>
+      <div class="demo-note" style="margin-top:1rem"><i data-lucide="info"></i><span>Tệp tải về là bản demo dạng văn bản, không phải tài liệu đầy đủ.</span></div>
+      <h2 style="font-size:1.4rem;margin-top:2.4rem;margin-bottom:.6rem">Mục lục</h2><ol class="toc-list" id="rToc"></ol>
+    </div>
+    <aside class="stack" style="--stack:1.2rem">
+      <div class="panel"><h3>Nội dung chính</h3><ul class="stack" style="--stack:.6rem" id="rMain"></ul></div>
+      <div class="panel"><h3>Tài nguyên tương tự</h3><div class="stack" style="--stack:.7rem" id="rSimilar"></div></div>
+      <div class="card" style="min-height:170px"><img src="../assets/images/scene-library.svg" alt="Thư viện số" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+      <button class="btn btn-secondary btn-block" id="rDl2"><i data-lucide="download"></i>Tải bản demo</button>
+    </aside>
+  </div>
+  <section style="margin-top:3.5rem"><div class="section-head"><h2>Tài liệu liên quan</h2></div><div class="grid grid-3" id="rRelated"></div></section>
+</div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../js/vendor/lucide.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/workflow.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>

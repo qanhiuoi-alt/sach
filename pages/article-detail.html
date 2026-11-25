@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài viết — AI & Digital Publishing</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<article id="articleRoot" class="section-sm">
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><span id="bcCat"></span><i data-lucide="chevron-right"></i><span aria-current="page" id="bcTitle"></span></nav>
+  <header class="article-header reveal">
+    <span class="badge" id="aBadge" style="align-self:flex-start"></span>
+    <h1 id="aTitle"></h1>
+    <p class="sapo" id="aSapo"></p>
+    <div class="byline">
+      <div class="author"><span class="avatar" id="aInit"></span><div><strong id="aAuthor"></strong><div class="meta-row"><span><i data-lucide="calendar"></i><span id="aDate"></span></span><span><i data-lucide="clock"></i><span id="aRead"></span></span></div></div></div>
+      <div class="share-row"><span class="caption">Chia sẻ</span><button class="btn-icon" data-share="copy" aria-label="Sao chép liên kết"><i data-lucide="link"></i></button><button class="btn-icon" data-share="Facebook" aria-label="Chia sẻ Facebook"><i data-lucide="share-2"></i></button><button class="btn-icon" data-share="LinkedIn" aria-label="Chia sẻ LinkedIn"><i data-lucide="briefcase"></i></button></div>
+    </div>
+  </header>
+  <figure class="article-cover"><img id="aCover" src="" alt="" width="1600" height="686"><figcaption id="aCaption"></figcaption></figure>
+
+  <div class="article-layout">
+    <nav class="toc" aria-label="Mục lục"><h4>Mục lục</h4><ol id="tocList"></ol><div class="toc-progress"><i id="tocProgress"></i></div></nav>
+    <div>
+      <details class="toc-mobile panel"><summary style="cursor:pointer;font-weight:600">Mục lục bài viết</summary><ol id="tocListM" class="toc" style="position:static;margin-top:.8rem"></ol></details>
+      <div class="prose" id="proseBody"></div>
+      <div class="article-bottom">
+        <div><h4 class="label" style="margin-bottom:.7rem">Tags</h4><div class="row" style="--gap:.5rem" id="aTags"></div></div>
+        <div><h4 class="label" style="margin-bottom:.5rem">Đánh giá nội dung</h4><div class="rating" id="rating" role="group" aria-label="Đánh giá"><button aria-label="1 sao"><i data-lucide="star"></i></button><button aria-label="2 sao"><i data-lucide="star"></i></button><button aria-label="3 sao"><i data-lucide="star"></i></button><button aria-label="4 sao"><i data-lucide="star"></i></button><button aria-label="5 sao"><i data-lucide="star"></i></button><span class="caption" id="ratingMsg" style="margin-left:.6rem"></span></div></div>
+        <div><h4 class="label" style="margin-bottom:.7rem">Chia sẻ bài viết</h4><div class="share-row"><button class="btn btn-secondary btn-sm" data-share="copy"><i data-lucide="link"></i>Sao chép liên kết</button><button class="btn btn-secondary btn-sm" data-share="Facebook"><i data-lucide="share-2"></i>Facebook</button><button class="btn btn-secondary btn-sm" data-share="LinkedIn"><i data-lucide="briefcase"></i>LinkedIn</button></div></div>
+        <div class="card next-article" id="nextArticle"></div>
+      </div>
+    </div>
+    <aside class="article-aside stack" style="--stack:1.2rem" aria-label="Thông tin bổ sung">
+      <div class="panel"><h3>Số liệu thống kê</h3><div class="stack" style="--stack:.7rem" id="sideStats"></div></div>
+      <div class="panel"><h3>Bài viết liên quan</h3><div class="side-list" id="sideRelated"></div></div>
+      <div class="panel"><h3>Nguồn tham khảo</h3><div class="side-list"><a href="#s6"><i data-lucide="arrow-down"></i><span>Xem danh sách nguồn ở cuối bài</span></a><a href="../pages/knowledge-hub.html"><i data-lucide="library"></i><span>Thư viện tri thức</span></a></div></div>
+    </aside>
+  </div>
+  <section style="margin-top:3.5rem"><div class="section-head"><h2>Related Articles</h2></div><div class="grid grid-3" id="relatedGrid"></div></section>
+</div></article>
+
+</main>
+<div id="site-footer"></div>
+<script src="../js/vendor/lucide.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/workflow.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>

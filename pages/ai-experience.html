@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Experience — Trải nghiệm cùng AI | AI & Digital Publishing</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero ">
+  <div class="bg"><img src="../assets/images/hero/hero-ai-panels.jpg" alt=""></div>
+  <div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Trang chủ</a> <i data-lucide="chevron-right"></i> <span aria-current="page">Trải nghiệm cùng AI</span></nav>
+    <div class="inner reveal">
+      <span class="tagline">Interactive Digital Lab</span>
+      <h1>Experience the future of publishing</h1>
+      <p class="subtitle">Khám phá quy trình xuất bản với sự hỗ trợ của AI. Mỗi bước là một công cụ bạn có thể thao tác ngay trên dữ liệu mô phỏng.</p>
+      <div class="hero-ctas"><a class="btn btn-primary btn-lg" href="workflow/research.html"><i data-lucide="play"></i>Bắt đầu bước 1</a><a class="btn btn-secondary btn-lg" href="#workflow">Xem quy trình</a></div>
+    </div>
+  </div>
+</section><nav class="subnav" data-spy aria-label="Mục lục trang"><div class="container"><a href="#workflow">AI Publishing Workflow</a><a href="#create-book">Tạo sách cùng AI</a><a href="#tools">Công cụ</a><a href="#results">Kết quả mô phỏng</a><a href="#guide">Hướng dẫn</a><a href="#related">Related Experiences</a></div></nav>
+<section class="section" id="workflow"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>AI Publishing Workflow</h2><p>Từ ý tưởng đến xuất bản – với sự hỗ trợ của AI.</p></div><button class="btn btn-ghost" id="wfReset"><i data-lucide="rotate-ccw"></i>Đặt lại tiến trình</button></div>
+  <div class="wf-progress" id="wfOverviewProgress"></div>
+  <div class="step-cards" id="wfOverview"></div>
+  <div class="demo-note" style="margin-top:1.4rem"><i data-lucide="info"></i><span>Toàn bộ kết quả là mô phỏng bằng JavaScript, không gọi mô hình AI thật. Dữ liệu bạn nhập chỉ lưu trong phiên trình duyệt.</span></div></div></section>
+<section class="section" id="create-book"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Trải nghiệm tạo một cuốn sách cùng AI</h2></div></div>
+  <div class="lab-split"><div class="stack" style="--stack:1rem"><h3>Một cuốn sách, năm bước, vài phút</h3><p class="text-sub">Nhập chủ đề, nhận phân tích; soạn nội dung mẫu; hiệu đính; chọn bìa; rồi đóng gói thành ấn phẩm demo. Dữ liệu của mỗi bước được chuyển sang bước kế tiếp.</p>
+  <ul class="check-list"><li class="ok"><i data-lucide="check-circle-2"></i>Dữ liệu xuyên suốt giữa các bước</li><li class="ok"><i data-lucide="check-circle-2"></i>Tạo nội dung, hiệu đính và chọn bìa thật sự thao tác được</li><li class="ok"><i data-lucide="check-circle-2"></i>Xuất bản mô phỏng và mở bản demo</li></ul>
+  <div><a class="btn btn-primary" href="workflow/research.html">Bắt đầu tạo sách <i data-lucide="arrow-right"></i></a></div></div>
+  <div class="card" style="min-height:300px"><img src="../assets/images/hero/hero-cyber-book.jpg" alt="Cuốn sách hologram giữa hệ thống dữ liệu" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div></div></div></section>
+<section class="section" id="tools"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Các công cụ trải nghiệm</h2></div></div>
+  <div class="grid grid-3" id="toolGrid"></div></div></section>
+<section class="section" id="results"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Kết quả mô phỏng</h2><p>Xem nhanh cách hệ thống trả lời trong từng tác vụ.</p></div></div>
+  <div class="lab-split"><div class="stack" style="--stack:.8rem"><h3>Chọn một tác vụ</h3><div class="tabs"><button class="tab active" data-sim="outline">Tạo dàn ý</button><button class="tab" data-sim="summary">Tóm tắt báo cáo</button><button class="tab" data-sim="check">Kiểm tra nhất quán</button></div><p class="text-sub small">Màn hình bên cạnh chạy kịch bản có sẵn để minh họa kết quả đầu ra.</p></div>
+  <div class="sim-window"><div class="sim-bar"><i></i><i></i><i></i><span style="margin-left:.6rem">adp-lab — mô phỏng</span></div><div class="sim-body" id="simBody" aria-live="polite"></div></div></div></div></section>
+<section class="section" id="guide"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Hướng dẫn sử dụng</h2></div></div>
+  <div class="how-grid">
+   <div class="card how-card"><div class="ti"><i data-lucide="text-cursor-input"></i></div><h3 style="font-size:1rem">Nhập chủ đề</h3><p>Bắt đầu bằng một chủ đề cụ thể, ví dụ “AI trong biên tập sách thiếu nhi”.</p></div>
+   <div class="card how-card"><div class="ti"><i data-lucide="sliders-horizontal"></i></div><h3 style="font-size:1rem">Tinh chỉnh tùy chọn</h3><p>Chọn thể loại, phong cách và đối tượng độc giả phù hợp.</p></div>
+   <div class="card how-card"><div class="ti"><i data-lucide="pencil-ruler"></i></div><h3 style="font-size:1rem">Chỉnh sửa kết quả</h3><p>Mọi đầu ra đều sửa được trực tiếp; biên tập viên luôn là người quyết định.</p></div>
+   <div class="card how-card"><div class="ti"><i data-lucide="package-check"></i></div><h3 style="font-size:1rem">Xuất bản demo</h3><p>Đóng gói định dạng và mở bản xem thử ở bước cuối.</p></div></div></div></section>
+<section class="section" id="related"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Related Experiences</h2></div></div>
+  <div class="grid grid-3" data-articles="experience:3"></div></div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../js/vendor/lucide.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/workflow.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>

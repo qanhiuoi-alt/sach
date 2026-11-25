@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biên tập và hiệu đính — AI Content Workflow</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/pages.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body data-root="../../" data-wf="editing">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-hero" style="border-bottom:0"><div class="bg"><img src="../../assets/images/hero/hero-ai-panels.jpg" alt=""></div>
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><a href="../ai-experience.html">Trải nghiệm cùng AI</a><i data-lucide="chevron-right"></i><span aria-current="page">AI Content Workflow</span></nav>
+<div class="inner reveal" style="padding-block:1.6rem 2rem"><span class="tagline">Bước 03 / 5</span><h1 style="font-size:clamp(1.9rem,1.2rem + 2.4vw,3rem)">Biên tập và hiệu đính</h1><p class="subtitle">Phát hiện lỗi, tối ưu nội dung với AI. Chỉnh sửa trực tiếp bản thảo và áp dụng từng gợi ý.</p></div></div></section>
+<section class="section-sm"><div class="container">
+  <div class="wf-progress" id="wfProgress" aria-label="Tiến trình workflow"></div>
+  <div class="demo-note" style="margin-bottom:1.2rem"><i data-lucide="info"></i><span>Bản demo: kết quả được mô phỏng bằng JavaScript và dữ liệu mẫu, không sử dụng mô hình AI thật.</span></div>
+  
+<div class="wf-cols-2">
+ <div class="wf-box"><h3><i data-lucide="file-text"></i>Manuscript</h3><div class="row" style="--gap:.5rem"><button class="btn btn-ghost btn-sm" id="loadContent"><i data-lucide="download"></i>Nạp nội dung từ bước Viết</button><button class="btn btn-ghost btn-sm" id="loadSample"><i data-lucide="file-text"></i>Bản thảo mẫu</button></div>
+  <textarea class="textarea" id="manuscript" style="min-height:380px" aria-label="Bản thảo"></textarea>
+  <div class="row" style="--gap:.6rem"><button class="btn btn-primary" id="checkBtn"><i data-lucide="scan-search"></i>Kiểm tra bản thảo</button><button class="btn btn-secondary" id="editCopy"><i data-lucide="copy"></i>Sao chép nội dung</button></div></div>
+ <div class="wf-box"><h3><i data-lucide="list-checks"></i>Editing result</h3>
+  <div class="tabs" id="editTabs" role="tablist"></div>
+  <div class="row" style="justify-content:space-between"><span class="caption" id="editSummary"></span><button class="btn btn-secondary btn-sm" id="applyAll"><i data-lucide="check-check"></i>Áp dụng gợi ý</button></div>
+  <div class="stack" style="--stack:.7rem;max-height:420px;overflow:auto;padding-right:.3rem" id="issueList"></div></div>
+</div>
+  <div class="wf-nav" id="wfNav"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="../../js/vendor/lucide.min.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/workflow.js"></script>
+<script src="../../js/interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tìm kiếm — AI & Digital Publishing</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-hero center-hero"><div class="bg"><img src="../assets/images/scene-brain.svg" alt=""></div>
+<div class="container"><div class="inner reveal">
+  <span class="tagline">Search Experience</span><h1>Search the knowledge.</h1>
+  <p class="subtitle">Khám phá hàng nghìn bài viết, tài nguyên và công cụ hữu ích về AI và xuất bản.</p>
+  <form class="big-search" id="bigSearch" role="search"><i data-lucide="search"></i><input type="search" placeholder="Nhập từ khóa: bản quyền, RAG, sách nói..." aria-label="Từ khóa tìm kiếm" autocomplete="off"><button class="btn btn-primary" type="submit">Tìm kiếm</button></form>
+  <div class="suggest" id="suggestions"></div>
+</div></div></section>
+<section class="section" id="searchApp"><div class="container container-narrow" style="max-width:1000px">
+  <div id="searchTop"></div>
+  <div class="tabs" id="searchTabs" role="tablist" aria-label="Loại nội dung">
+    <button class="tab active" role="tab" data-kind="all">Tất cả<span class="count">0</span></button>
+    <button class="tab" role="tab" data-kind="article"><i data-lucide="newspaper"></i>Bài viết<span class="count">0</span></button>
+    <button class="tab" role="tab" data-kind="resource"><i data-lucide="file-text"></i>Tài nguyên<span class="count">0</span></button>
+    <button class="tab" role="tab" data-kind="category"><i data-lucide="folders"></i>Chuyên mục<span class="count">0</span></button>
+    <button class="tab" role="tab" data-kind="tool"><i data-lucide="cpu"></i>Công cụ AI<span class="count">0</span></button>
+  </div>
+  <div class="results-bar" style="margin-top:1.4rem"><span id="resultCount" aria-live="polite"></span></div>
+  <div class="stack" style="--stack:1rem" id="resultList"></div><div class="pagination" id="searchPag"></div>
+</div></section>
+<section class="section"><div class="container"><div class="section-head"><h2>Tài nguyên liên quan</h2><a class="link-more" href="knowledge-hub.html">Xem thư viện <i data-lucide="arrow-right"></i></a></div><div class="grid grid-3" id="relatedRes"></div></div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../js/vendor/lucide.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/workflow.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* ==========================================================
+   AI & DIGITAL PUBLISHING — Design tokens
+   Mọi màu trong website phải lấy từ các biến dưới đây.
+   ========================================================== */
+:root {
+  /* Brand palette */
+  --color-primary: #101D36;   /* Midnight Navy */
+  --color-blue: #258DEB;      /* Electric Blue */
+  --color-cyan: #47C9DF;      /* Cyan */
+  --color-white: #F3F6FA;     /* Cloud White */
+  --color-silver: #9DAFC5;    /* Silver */
+
+  /* Surfaces */
+  --bg-main: #101D36;
+  --bg-deep: #0B1529;         /* sắc độ đậm hơn của Midnight Navy */
+  --bg-secondary: #152744;
+  --bg-card: #192D4B;
+  --bg-card-hover: #203A5D;
+  --bg-glass: rgba(25, 45, 75, 0.62);
+  --bg-input: rgba(11, 21, 41, 0.7);
+
+  /* Borders & glow */
+  --border-primary: rgba(71, 201, 223, 0.35);
+  --border-soft: rgba(71, 201, 223, 0.16);
+  --border-strong: rgba(71, 201, 223, 0.7);
+  --glow-blue: rgba(37, 141, 235, 0.25);
+  --glow-cyan: rgba(71, 201, 223, 0.2);
+
+  /* Semantic (derived từ bảng màu thương hiệu) */
+  --text-main: var(--color-white);
+  --text-sub: var(--color-silver);
+  --accent: var(--color-blue);
+  --accent-2: var(--color-cyan);
+  --priority-high: #F3F6FA;   /* dùng icon + nhãn để phân biệt mức độ, không thêm màu ngoài hệ thống */
+
+  /* Gradients */
+  --grad-cta: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-blue) 100%);
+  --grad-card: linear-gradient(160deg, rgba(37,141,235,.16) 0%, rgba(25,45,75,.85) 55%, rgba(16,29,54,.95) 100%);
+  --grad-overlay: linear-gradient(180deg, rgba(16,29,54,0) 0%, rgba(16,29,54,.55) 45%, rgba(11,21,41,.95) 100%);
+  --grad-page: radial-gradient(1100px 600px at 80% -10%, rgba(37,141,235,.22), transparent 60%),
+               radial-gradient(900px 500px at -10% 30%, rgba(71,201,223,.10), transparent 60%);
+
+  /* Typography */
+  --font-main: 'Be Vietnam Pro', 'Inter', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-h1: clamp(2.2rem, 1.2rem + 3.6vw, 4.2rem);
+  --fs-h2: clamp(1.6rem, 1.1rem + 1.8vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1rem + .9vw, 1.7rem);
+  --fs-h4: 1.1rem;
+  --fs-subtitle: clamp(1rem, .9rem + .35vw, 1.2rem);
+  --fs-body: 1rem;
+  --fs-small: .875rem;
+  --fs-caption: .78rem;
+
+  /* Spacing / radius / shadow */
+  --sp-1: .25rem; --sp-2: .5rem; --sp-3: .75rem; --sp-4: 1rem;
+  --sp-5: 1.5rem; --sp-6: 2rem; --sp-7: 3rem; --sp-8: 4.5rem; --sp-9: 6rem;
+  --radius-sm: 8px; --radius-md: 14px; --radius-lg: 20px; --radius-pill: 999px;
+  --shadow-card: 0 10px 30px rgba(5, 10, 24, .45);
+  --shadow-glow: 0 0 0 1px var(--border-primary), 0 12px 36px var(--glow-blue);
+  --header-h: 68px;
+  --container: 1280px;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --t-fast: .18s var(--ease);
+  --t-base: .32s var(--ease);
+}

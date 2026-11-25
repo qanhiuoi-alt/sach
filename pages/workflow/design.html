@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiết kế và minh họa — AI Content Workflow</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/pages.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body data-root="../../" data-wf="design">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-hero" style="border-bottom:0"><div class="bg"><img src="../../assets/images/hero/hero-ai-panels.jpg" alt=""></div>
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><a href="../ai-experience.html">Trải nghiệm cùng AI</a><i data-lucide="chevron-right"></i><span aria-current="page">AI Content Workflow</span></nav>
+<div class="inner reveal" style="padding-block:1.6rem 2rem"><span class="tagline">Bước 04 / 5</span><h1 style="font-size:clamp(1.9rem,1.2rem + 2.4vw,3rem)">Thiết kế và minh họa</h1><p class="subtitle">Tạo bìa sách và hình ảnh ấn tượng với AI. Chọn mẫu bìa để dùng ở bước xuất bản.</p></div></div></section>
+<section class="section-sm"><div class="container">
+  <div class="wf-progress" id="wfProgress" aria-label="Tiến trình workflow"></div>
+  <div class="demo-note" style="margin-bottom:1.2rem"><i data-lucide="info"></i><span>Bản demo: kết quả được mô phỏng bằng JavaScript và dữ liệu mẫu, không sử dụng mô hình AI thật.</span></div>
+  
+<div class="wf-cols-3" style="grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr) minmax(0,.8fr)">
+ <div class="wf-box"><h3><i data-lucide="sliders-horizontal"></i>Điều khiển</h3>
+  <div class="field"><label for="dGenre">Thể loại sách</label><select class="select" id="dGenre"><option>Công nghệ</option><option>Khoa học</option><option>Kinh doanh</option><option>Thiếu nhi</option><option>Văn hóa</option></select></div>
+  <div class="field"><label for="dStyle">Phong cách thiết kế</label><select class="select" id="dStyle"><option>Futuristic</option><option>Tối giản</option><option>Editorial</option></select></div>
+  <div class="field"><span class="label">Bảng màu</span><div class="swatches" id="swatches"></div></div>
+  <div class="field"><label for="dLayout">Bố cục bìa</label><select class="select" id="dLayout"><option value="0">Hình trên – chữ dưới</option><option value="1">Chữ giữa khung</option><option value="2">Chữ lớn, nhấn màu</option></select></div>
+  <div class="field"><label for="dTitle">Tiêu đề sách</label><input class="input" id="dTitle"></div>
+  <div class="field"><label for="dAuthor">Tên tác giả</label><input class="input" id="dAuthor"></div>
+  <button class="btn btn-primary btn-block" id="dGenerate"><i data-lucide="wand-sparkles"></i>Tạo phương án bìa</button></div>
+ <div class="wf-box"><h3><i data-lucide="images"></i>Preview — chọn một mẫu</h3><div class="cover-options" id="coverOptions"></div><p class="caption" id="selectedLabel" aria-live="polite"></p>
+  <p class="caption">Các mẫu được tạo từ bộ minh họa có sẵn của dự án (không dùng AI tạo ảnh thật).</p></div>
+ <div class="wf-box"><h3><i data-lucide="eye"></i>Bìa đã chọn</h3><div style="aspect-ratio:3/4;border-radius:10px;overflow:hidden;box-shadow:0 20px 50px rgba(5,10,24,.6),0 0 40px var(--glow-blue)" id="bigPreview"></div></div>
+</div>
+  <div class="wf-nav" id="wfNav"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="../../js/vendor/lucide.min.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/workflow.js"></script>
+<script src="../../js/interactions.js"></script>
+</body>
+</html>

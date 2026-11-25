@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nghiên cứu và tìm kiếm tài liệu — AI Content Workflow</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/pages.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body data-root="../../" data-wf="research">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-hero" style="border-bottom:0"><div class="bg"><img src="../../assets/images/hero/hero-ai-panels.jpg" alt=""></div>
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><a href="../ai-experience.html">Trải nghiệm cùng AI</a><i data-lucide="chevron-right"></i><span aria-current="page">AI Content Workflow</span></nav>
+<div class="inner reveal" style="padding-block:1.6rem 2rem"><span class="tagline">Bước 01 / 5</span><h1 style="font-size:clamp(1.9rem,1.2rem + 2.4vw,3rem)">Nghiên cứu và tìm kiếm tài liệu</h1><p class="subtitle">Phân tích chủ đề, tìm kiếm xu hướng và gợi ý hướng nghiên cứu phù hợp.</p></div></div></section>
+<section class="section-sm"><div class="container">
+  <div class="wf-progress" id="wfProgress" aria-label="Tiến trình workflow"></div>
+  <div class="demo-note" style="margin-bottom:1.2rem"><i data-lucide="info"></i><span>Bản demo: kết quả được mô phỏng bằng JavaScript và dữ liệu mẫu, không sử dụng mô hình AI thật.</span></div>
+  
+<div class="wf-cols-3">
+ <div class="wf-box"><h3><i data-lucide="text-cursor-input"></i>Input</h3>
+  <div class="field"><label for="topic">Chủ đề</label><input class="input" id="topic" placeholder="Ví dụ: AI trong biên tập sách thiếu nhi"></div>
+  <div class="field"><label for="genre">Thể loại</label><select class="select" id="genre"><option>Bài báo</option><option>Sách chuyên khảo</option><option>Cẩm nang</option><option>Báo cáo</option><option>Blog chuyên đề</option></select></div>
+  <div class="field"><label for="audience">Đối tượng độc giả</label><select class="select" id="audience"><option>Biên tập viên</option><option>Nhà quản lý xuất bản</option><option>Độc giả phổ thông</option><option>Sinh viên</option><option>Nhà nghiên cứu</option></select></div>
+  <button class="btn btn-primary btn-block" id="analyze"><i data-lucide="sparkles"></i>Phân tích chủ đề</button></div>
+ <div class="wf-box"><h3><i data-lucide="chart-network"></i>Analysis result</h3><div id="analysisResult" style="flex:1"><div class="placeholder-state"><i data-lucide="scan-search"></i><p>Nhập chủ đề và nhấn “Phân tích chủ đề” để xem từ khóa, chủ đề liên quan, hướng nghiên cứu và cấu trúc đề xuất.</p></div></div></div>
+ <div class="wf-box"><h3><i data-lucide="library"></i>References</h3><div id="references" class="stack" style="--stack:1.1rem"><div class="placeholder-state"><i data-lucide="book-marked"></i><p>Tài liệu tham khảo mẫu sẽ hiển thị sau khi phân tích.</p></div></div></div>
+</div>
+  <div class="wf-nav" id="wfNav"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="../../js/vendor/lucide.min.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/workflow.js"></script>
+<script src="../../js/interactions.js"></script>
+</body>
+</html>

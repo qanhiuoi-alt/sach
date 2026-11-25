@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viết nội dung — AI Content Workflow</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/global.css">
+<link rel="stylesheet" href="../../css/components.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/pages.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body data-root="../../" data-wf="writing">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-hero" style="border-bottom:0"><div class="bg"><img src="../../assets/images/hero/hero-ai-panels.jpg" alt=""></div>
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Trang chủ</a><i data-lucide="chevron-right"></i><a href="../ai-experience.html">Trải nghiệm cùng AI</a><i data-lucide="chevron-right"></i><span aria-current="page">AI Content Workflow</span></nav>
+<div class="inner reveal" style="padding-block:1.6rem 2rem"><span class="tagline">Bước 02 / 5</span><h1 style="font-size:clamp(1.9rem,1.2rem + 2.4vw,3rem)">Viết nội dung</h1><p class="subtitle">Soạn thảo nội dung theo thể loại, phong cách, độ dài và đối tượng độc giả.</p></div></div></section>
+<section class="section-sm"><div class="container">
+  <div class="wf-progress" id="wfProgress" aria-label="Tiến trình workflow"></div>
+  <div class="demo-note" style="margin-bottom:1.2rem"><i data-lucide="info"></i><span>Bản demo: kết quả được mô phỏng bằng JavaScript và dữ liệu mẫu, không sử dụng mô hình AI thật.</span></div>
+  
+<div class="wf-cols-2" style="grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr)">
+ <div class="wf-box"><h3><i data-lucide="sliders-horizontal"></i>Thiết lập</h3>
+  <div class="field"><label for="wTopic">Chủ đề</label><input class="input" id="wTopic" placeholder="Ví dụ: AI trong biên tập sách thiếu nhi"></div>
+  <div class="field"><label for="wGenre">Thể loại nội dung</label><select class="select" id="wGenre"><option>Bài báo</option><option>Sách chuyên khảo</option><option>Cẩm nang</option><option>Báo cáo</option><option>Blog chuyên đề</option></select></div>
+  <div class="field"><label for="wStyle">Phong cách viết</label><select class="select" id="wStyle"><option>Báo chí</option><option>Học thuật</option><option>Gần gũi</option></select></div>
+  <div class="field"><label for="wLength">Độ dài</label><select class="select" id="wLength"><option>Ngắn (~120 từ)</option><option selected>Vừa (~250 từ)</option><option>Dài (~400 từ)</option></select></div>
+  <div class="field"><label for="wAudience">Đối tượng độc giả</label><select class="select" id="wAudience"><option>Biên tập viên</option><option>Nhà quản lý xuất bản</option><option>Độc giả phổ thông</option><option>Sinh viên</option><option>Nhà nghiên cứu</option></select></div>
+  <button class="btn btn-primary btn-block" id="wGenerate"><i data-lucide="wand-sparkles"></i>Tạo nội dung</button></div>
+ <div class="wf-box"><h3><i data-lucide="file-pen-line"></i>Khu vực biên tập</h3>
+  <div class="row" style="justify-content:space-between"><span class="caption" id="wCount">0 từ</span><span class="caption">Có thể chỉnh sửa trực tiếp</span></div>
+  <div class="output" id="wOutput" data-empty="1" aria-live="polite"><span class="text-sub">Nội dung sẽ xuất hiện ở đây sau khi bạn nhấn “Tạo nội dung”.</span></div>
+  <div class="row" style="--gap:.6rem"><button class="btn btn-secondary btn-sm" id="wRewrite"><i data-lucide="refresh-cw"></i>Viết lại</button><button class="btn btn-secondary btn-sm" id="wCopy"><i data-lucide="copy"></i>Sao chép</button><button class="btn btn-secondary btn-sm" id="wClear"><i data-lucide="trash-2"></i>Xóa nội dung</button></div></div>
+</div>
+  <div class="wf-nav" id="wfNav"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="../../js/vendor/lucide.min.js"></script>
+<script src="../../js/data.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/workflow.js"></script>
+<script src="../../js/interactions.js"></script>
+</body>
+</html>

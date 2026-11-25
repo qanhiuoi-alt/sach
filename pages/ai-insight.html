@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Insight — Góc nhìn AI | AI & Digital Publishing</title>
+<meta name="description" content="AI & Digital Publishing — Reimagine the way we publish.">
+<meta name="theme-color" content="#101D36">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<a class="sr-only" href="#main">Bỏ qua tới nội dung</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero ">
+  <div class="bg"><img src="../assets/images/scene-brain.svg" alt=""></div>
+  <div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Trang chủ</a> <i data-lucide="chevron-right"></i> <span aria-current="page">Góc nhìn AI</span></nav>
+    <div class="inner reveal">
+      <span class="tagline">Technology Editorial</span>
+      <h1>AI Insight</h1>
+      <p class="subtitle">Explore the Intelligence — góc nhìn chuyên sâu về cách trí tuệ nhân tạo đang thay đổi nghiệp vụ xuất bản, từ biên tập, dịch thuật đến phát hành.</p>
+      <div><a class="btn btn-primary" href="#latest"><i data-lucide="arrow-down"></i>Khám phá thêm</a></div>
+    </div>
+  </div>
+</section><nav class="subnav" data-spy aria-label="Mục lục trang"><div class="container"><a href="#featured">Nổi bật</a><a href="#latest">Mới nhất</a><a href="#research">AI Research</a><a href="#perspective">Góc nhìn ngành</a><a href="#tech-spotlight">Technology Spotlight</a><a href="#related">Liên quan</a></div></nav>
+<section class="section" id="featured"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Featured Article</h2></div></div>
+  <div class="cols-9-3"><div data-feature="ai-va-nganh-xuat-ban"></div>
+  <aside class="stack" style="--stack:1rem" id="insightStats"></aside></div></div></section>
+<section class="section" id="latest"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Latest Stories</h2></div></div>
+  <div class="row" id="articleFilter" data-cat="insight" style="--gap:.6rem;margin-bottom:1.4rem" role="group" aria-label="Lọc theo thẻ"></div>
+  <div class="grid grid-3" id="latestList"></div><div class="pagination" id="latestPag"></div></div></section>
+<section class="section" id="research"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>AI Research</h2><p>Các nghiên cứu mới và báo cáo công nghệ.</p></div><a class="link-more" href="knowledge-hub.html?type=B%C3%A1o%20c%C3%A1o#resources">Xem báo cáo <i data-lucide="arrow-right"></i></a></div>
+  <div class="grid grid-3" data-resources="3" data-type="Báo cáo|E-book"></div></div></section>
+<section class="section" id="perspective"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Industry Perspective</h2><p>Góc nhìn chuyên gia và nhận định về ngành xuất bản (nội dung minh họa).</p></div></div>
+  <div class="grid grid-3">
+   <div class="card expert-card"><blockquote class="quote-block" style="padding:1rem 1rem 1rem 3.2rem"><p>AI sẽ không thay thế biên tập viên, nhưng biên tập viên biết dùng AI sẽ thay đổi tốc độ làm việc của cả tòa soạn.</p></blockquote><div class="expert"><span class="avatar">NA</span><div><strong>Nguyễn Minh Anh</strong><small>Tổng biên tập, đơn vị xuất bản số (minh họa)</small></div></div></div>
+   <div class="card expert-card"><blockquote class="quote-block" style="padding:1rem 1rem 1rem 3.2rem"><p>Khoảng trống lớn nhất không nằm ở công nghệ mà ở quy trình: ai kiểm chứng, ai chịu trách nhiệm, ai ghi nhận nguồn.</p></blockquote><div class="expert"><span class="avatar">PL</span><div><strong>Phạm Đức Long</strong><small>Chuyên gia quy trình biên tập (minh họa)</small></div></div></div>
+   <div class="card expert-card"><blockquote class="quote-block" style="padding:1rem 1rem 1rem 3.2rem"><p>Độc giả không cần biết bạn dùng mô hình nào. Họ cần biết nội dung đáng tin và được trình bày tử tế.</p></blockquote><div class="expert"><span class="avatar">VY</span><div><strong>Võ Hải Yến</strong><small>Nhà nghiên cứu truyền thông (minh họa)</small></div></div></div>
+  </div></div></section>
+<section class="section" id="tech-spotlight"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Technology Spotlight</h2><p>Bốn công nghệ nền tảng đang định hình ngành.</p></div></div>
+  <div class="tech-grid">
+   <div class="card tech-card"><span class="ti"><i data-lucide="sparkles"></i></span><h3>Generative AI</h3><p>Sinh văn bản, hình ảnh, âm thanh từ chỉ dẫn. Hữu ích cho bản nháp, tiêu đề, minh họa; cần biên tập và kiểm chứng.</p><a class="link-more" href="article-detail.html?id=chatgpt-hanh-trinh-doc-sach">Đọc bài <i data-lucide="arrow-right"></i></a></div>
+   <div class="card tech-card"><span class="ti"><i data-lucide="database-zap"></i></span><h3>RAG</h3><p>Truy xuất tài liệu liên quan rồi mới trả lời, giúp câu trả lời có dẫn nguồn và bám sát kho nội dung của nhà xuất bản.</p><a class="link-more" href="article-detail.html?id=rag-cho-thu-vien-so">Đọc bài <i data-lucide="arrow-right"></i></a></div>
+   <div class="card tech-card"><span class="ti"><i data-lucide="bot"></i></span><h3>AI Agent</h3><p>Tác tử tự thực hiện chuỗi việc như kiểm tra sự kiện, chuẩn hóa thể lệ trình bày, nhắc tiến độ bản thảo.</p><a class="link-more" href="article-detail.html?id=ai-agent-bien-tap">Đọc bài <i data-lucide="arrow-right"></i></a></div>
+   <div class="card tech-card"><span class="ti"><i data-lucide="layers"></i></span><h3>Multimodal AI</h3><p>Hiểu và tạo đồng thời chữ, ảnh, tiếng nói. Nền tảng cho sách đa phương tiện và trải nghiệm đọc mới.</p><a class="link-more" href="article-detail.html?id=sach-da-phuong-tien">Đọc bài <i data-lucide="arrow-right"></i></a></div>
+  </div></div></section>
+<section class="section" id="related"><div class="container reveal"><div class="section-head"><div class="head-text"><h2>Related Articles</h2></div></div>
+  <div class="grid grid-3" data-articles="all:3"></div></div></section>
+<section class="section-sm"><div class="container"><div class="cta-band"><div><h2 style="font-size:1.5rem">Muốn thử AI vào quy trình của bạn?</h2><p class="text-sub">Trải nghiệm quy trình 5 bước với dữ liệu mô phỏng.</p></div><a class="btn btn-primary btn-lg" href="ai-experience.html#workflow">Trải nghiệm ngay <i data-lucide="arrow-right"></i></a></div></div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../js/vendor/lucide.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/workflow.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>
